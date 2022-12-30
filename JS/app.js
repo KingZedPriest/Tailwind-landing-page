@@ -6,3 +6,15 @@ btn.addEventListener("click", () => [
   nav.classList.toggle("flex"),
   nav.classList.toggle("hidden"),
 ]);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("unhide");
+    } else {
+      entry.target.classList.remove("unhide")
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll(".hide");
+hiddenElements.forEach((el) => observer.observe(el));

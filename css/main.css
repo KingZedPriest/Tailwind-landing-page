@@ -894,6 +894,22 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.delay-700 {
+  transition-delay: 700ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
+}
+
 body {
   background-image: url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
@@ -965,6 +981,19 @@ html {
 
 .open .hamburger-down {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.hide{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.unhide{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .hover\:bg-brightRedLight:hover {
