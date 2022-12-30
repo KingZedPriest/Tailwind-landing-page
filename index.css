@@ -15,7 +15,7 @@ html {
   background-image: url("../images/bg-simplify-section-Desktop.svg");
   background-repeat: no-repeat;
 }
-
+/* Media Queries For The Background Image */
 @media (max-width: 576px) {
   body {
     background-position: 50px -50px;
@@ -25,7 +25,7 @@ html {
     background-image: url("../images/bg-simplify-section-mobile.svg");
   }
 }
-
+/* The Nav Bar For Small Screen */
 .hamburger {
   cursor: pointer;
   width: 24px;
@@ -64,15 +64,15 @@ html {
 .open .hamburger-down {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
-
-.hide{
+/* The Animation */
+.hide {
   opacity: 0;
-  filter:blur(5px);
+  filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
 }
-.unhide{
- opacity: 1;
- filter: blur(0);
- transform: translateX(0);
+.unhide {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

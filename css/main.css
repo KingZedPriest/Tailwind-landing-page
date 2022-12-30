@@ -894,10 +894,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.delay-200 {
-  transition-delay: 200ms;
-}
-
 .delay-500 {
   transition-delay: 500ms;
 }
@@ -926,6 +922,8 @@ html {
   background-repeat: no-repeat;
 }
 
+/* Media Queries For The Background Image */
+
 @media (max-width: 576px) {
   body {
     background-position: 50px -50px;
@@ -936,6 +934,8 @@ html {
     background-image: url("../images/bg-simplify-section-mobile.svg");
   }
 }
+
+/* The Nav Bar For Small Screen */
 
 .hamburger {
   cursor: pointer;
@@ -983,14 +983,16 @@ html {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.hide{
+/* The Animation */
+
+.hide {
   opacity: 0;
-  filter:blur(5px);
+  filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
 }
 
-.unhide{
+.unhide {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
